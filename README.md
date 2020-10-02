@@ -18,7 +18,7 @@ This entire app is a work in progress so feel free to check back periodically.
 
 ### Additional Info
 
-To get started create an account [ere](https://tokbox.com/account/user/signup)
+To get started create an account [here](https://tokbox.com/account/user/signup)
 
 Once your account is made, create a project and obtain the following:
 
