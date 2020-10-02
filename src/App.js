@@ -3,7 +3,6 @@ import { OTSession, OTStreams, preloadScript } from "opentok-react";
 import LandingPage from "./components/LandingPage";
 import Publisher from "./components/Publisher";
 import Subscriber from "./components/Subscriber";
-import Footer from "./components/Footer";
 import "./App.css";
 
 class App extends React.Component {
@@ -66,7 +65,6 @@ class App extends React.Component {
         ) : (
           <LandingPage createSession={this.createSession} />
         )}
-        <Footer />
       </div>
     );
   }

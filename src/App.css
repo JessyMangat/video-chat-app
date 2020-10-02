@@ -34,11 +34,12 @@ html {
 .LandingPage h2 {
   font-weight: 300;
   font-size: 2rem;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   color: #333;
 }
 
 .Form .input-field {
+  margin-top: 5rem;
   height: 4vh;
   width: 15vw;
   padding-left: 1rem;
@@ -49,6 +50,17 @@ html {
 
 .Form .input-field::placeholder{
   color: white;
+}
+
+.Form .incorrect-field {
+  margin-top: 5rem;
+  height: 4vh;
+  width: 15vw;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #333;
+  color: white;
+  border: 2px solid #d9534f;
 }
 
 .Form .button {
@@ -69,7 +81,7 @@ html {
   
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
   .Form .button {
     height: 6vh;
     width: 14vw;
@@ -77,6 +89,7 @@ html {
     background-color: #eee;
     border: 1px solid #333;
     color: #333;
+    font-size: 0.6rem;
    }
    .Form .button:hover {
     height: 6.2vh;
@@ -87,6 +100,7 @@ html {
     
   }
   .Form .input-field {
+    margin-top: 5rem;
     height: 6vh;
     width: 20vw;
     padding-left: 1rem;
@@ -97,6 +111,7 @@ html {
   
   .Form .input-field::placeholder{
     color: white;
+    font-size: 0.6rem;
   }
 }
 
@@ -122,27 +137,6 @@ html {
 
 .Checkbox label {
   margin-right: 1rem;
-}
-
-.Footer a{
-  text-decoration: none;
-}
-
-.Footer {
-  position: absolute;
-  font-size: 0.8rem;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 1rem;
-}
-
-.Footer a:hover {
-  transition: 0.5s;
-  color: #f09d51;
-  font-size: 0.9rem;
 }
 
 
