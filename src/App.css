@@ -38,41 +38,35 @@ html {
   color: #333;
 }
 
-.LandingPage .form-container {
-  display: flex;
-  justify-content: center;
-}
-
-::placeholder {
-  color: white;
-}
-
-.LandingPage input {
-  height: 3rem;
-  width: 20rem;
-  border: none;
-  background-color: #333;
-  color: white;
-  margin-bottom: 1rem;
+.Form .input-field {
+  height: 4vh;
+  width: 15vw;
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.LandingPage button {
-  width: 10rem;
-  height: 4rem;
-  background-color: #eee;
-  font-size: 1rem;
-  border: 1px solid black;
-}
-
-.LandingPage button:hover {
-  transition: 0.5s;
-  width: 10.1rem;
-  height: 4.1rem;
-  background-color: #f09d51;
-  font-size: 1.2rem;
+  background-color: #333;
   color: white;
+}
+
+.Form .input-field::placeholder{
+  color: white;
+}
+
+.Form .button {
+  height: 4vh;
+  width: 4vw;
+  margin-left: 0.5rem;
+  background-color: #eee;
+  border: 1px solid #333;
+  color: #333;
+}
+
+.Form .button:hover {
+  height: 4.2vh;
+  width: 4.2vw;
+  transition: 0.4s;
+  background-color: #f09d51;
+  color: white;
+  
 }
 
 .Footer a{
@@ -95,3 +89,5 @@ html {
   color: #f09d51;
   font-size: 0.9rem;
 }
+
+

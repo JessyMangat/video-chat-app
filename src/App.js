@@ -15,6 +15,7 @@ class App extends React.Component {
       error: null,
       connected: false,
       hasCreatedSession: false,
+      userName: "",
     };
     this.sessionEvents = {
       sessionConnected: () => {
@@ -30,7 +31,8 @@ class App extends React.Component {
     this.setState({ error: `Failed to connect: ${err.message}` });
   }
     
-  createSession(){
+  createSession(input){
+    this.setState({ userName: input })
     this.setState({ hasCreatedSession: true })
   }
 
@@ -39,6 +41,7 @@ class App extends React.Component {
     return (
       <div className = "App">
         {this.state.hasCreatedSession ? (
+          <div className="video-container">
        <OTSession
        apiKey={this.props.apiKey}
        sessionId={this.props.sessionId}
@@ -47,12 +50,13 @@ class App extends React.Component {
        onError={this.onError}
      >
        {this.state.error ? <div id="error">{this.state.error}</div> : null}
-       <ConnectionStatus connected={this.state.connected}/>
+       <ConnectionStatus connected={this.state.connected} userName={this.state.userName}/>
        <Publisher />
        <OTStreams>
          <Subscriber />
        </OTStreams>
      </OTSession>
+     </div>
       ) : (
         <LandingPage createSession={this.createSession}/>
       )}

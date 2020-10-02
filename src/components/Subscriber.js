@@ -27,7 +27,7 @@ class Subscriber extends React.Component {
 
   render() {
     return (
-      <div className="subscriber">
+      <div className="Subscriber">
         Subscriber
         {this.state.error ? <div id="error">{this.state.error}</div> : null}
         <OTSubscriber

@@ -5,7 +5,7 @@ class ConnectionStatus extends React.Component {
     let status = this.props.connected ? 'Connected' : 'Disconnected';
     return (
       <div className="connectionStatus">
-        <strong>Status:</strong> {status}
+        <strong>{this.props.userName}:</strong> {status}
       </div>
     );
   }
