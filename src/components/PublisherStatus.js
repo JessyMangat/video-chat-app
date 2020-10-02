@@ -4,7 +4,7 @@ class PublisherStatus extends React.Component {
   render() {
     let status = this.props.connected ? 'Connected' : 'Disconnected';
     return (
-      <div className="connectionStatus">
+      <div className="PublisherStatus">
         <strong>{this.props.userName}:</strong> {status}
       </div>
     );

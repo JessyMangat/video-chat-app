@@ -26,7 +26,7 @@ class CheckBox extends React.Component {
  
   render() {
     return (
-      <div>
+      <div className="Checkbox">
         <label htmlFor={this.state.id}>
           {this.props.label}
         </label>

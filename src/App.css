@@ -79,8 +79,6 @@ html {
   height: 80vh !important;
 }
 
-
-
 .subscriber-container {
   float: left;
   display: flex;
@@ -89,6 +87,10 @@ html {
 .OTSubscriberContainer {
   width: 25vw !important;
   height: 25vh !important;
+}
+
+.Checkbox label {
+  margin-right: 1rem;
 }
 
 .Footer a{

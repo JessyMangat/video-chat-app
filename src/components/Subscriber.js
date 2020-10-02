@@ -1,6 +1,5 @@
 import React from "react";
 import { OTSubscriber } from "opentok-react";
-import CheckBox from "./CheckBox";
 
 class Subscriber extends React.Component {
   constructor(props) {
@@ -35,16 +34,6 @@ class Subscriber extends React.Component {
             subscribeToVideo: this.state.video,
           }}
           onError={this.onError}
-        />
-        <CheckBox
-          label="Subscribe to Audio"
-          initialChecked={this.state.audio}
-          onChange={this.setAudio}
-        />
-        <CheckBox
-          label="Subscribe to Video"
-          initialChecked={this.state.video}
-          onChange={this.setVideo}
         />
       </div>
     );
