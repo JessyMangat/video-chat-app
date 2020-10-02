@@ -69,6 +69,37 @@ html {
   
 }
 
+@media only screen and (max-width: 600px) {
+  .Form .button {
+    height: 6vh;
+    width: 14vw;
+    margin-left: 0.5rem;
+    background-color: #eee;
+    border: 1px solid #333;
+    color: #333;
+   }
+   .Form .button:hover {
+    height: 6.2vh;
+    width: 14.2vw;
+    transition: 0.4s;
+    background-color: #f09d51;
+    color: white;
+    
+  }
+  .Form .input-field {
+    height: 6vh;
+    width: 20vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  .Form .input-field::placeholder{
+    color: white;
+  }
+}
+
 
 .publisher-container {
   float: right;
