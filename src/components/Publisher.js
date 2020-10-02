@@ -1,6 +1,7 @@
 import React from "react";
 import { OTPublisher } from "opentok-react";
 import CheckBox from "./CheckBox";
+import PublisherStatus from "./PublisherStatus";
 
 class Publisher extends React.Component {
   constructor(props) {
@@ -33,6 +34,8 @@ class Publisher extends React.Component {
   render() {
     return (
       <div className="Publisher">
+        <PublisherStatus connected={this.props.connected}
+                userName={this.props.userName}/>
         {this.state.error ? <div id="error">{this.state.error}</div> : null}
         <OTPublisher
           properties={{

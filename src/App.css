@@ -69,6 +69,28 @@ html {
   
 }
 
+
+.publisher-container {
+  float: right;
+}
+
+.OTPublisherContainer {
+  width: 50vw !important;
+  height: 80vh !important;
+}
+
+
+
+.subscriber-container {
+  float: left;
+  display: flex;
+}
+
+.OTSubscriberContainer {
+  width: 25vw !important;
+  height: 25vh !important;
+}
+
 .Footer a{
   text-decoration: none;
 }

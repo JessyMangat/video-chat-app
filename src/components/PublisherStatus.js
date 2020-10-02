@@ -1,6 +1,6 @@
 import React from 'react';
  
-class ConnectionStatus extends React.Component {
+class PublisherStatus extends React.Component {
   render() {
     let status = this.props.connected ? 'Connected' : 'Disconnected';
     return (
@@ -10,4 +10,4 @@ class ConnectionStatus extends React.Component {
     );
   }
 }
-export default ConnectionStatus;
+export default PublisherStatus;
