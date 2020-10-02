@@ -4,6 +4,8 @@ Video chat app built with React and OpenTok.
 
 This a simple video chat app that allows users to communicate via video, audio, and screenshare. 
 
+Live demo can be found [here](https://videochat.jessymangat.com)
+
 ## Getting Started
 
 For the sake of time this app is strictly front end with React. It uses a static token obtained directly from tokbox. All visitors of the site will be placed into the same chat room. 
@@ -16,7 +18,7 @@ This entire app is a work in progress so feel free to check back periodically.
 
 ### Additional Info
 
-To get started create an account at: https://tokbox.com/account/user/signup
+To get started create an account [ere](https://tokbox.com/account/user/signup)
 
 Once your account is made, create a project and obtain the following:
 
