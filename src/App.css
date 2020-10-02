@@ -1,24 +1,97 @@
-body, html {
-  background-color: cornsilk;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  max-width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  background: #eee;
   height: 100%;
-  font-family: Verdana, Geneva, sans-serif
 }
-.connectionStatus {
-  padding-top: 20px;
-  margin-left: 5%;
-  font-size: 1.5em;
+
+.LandingPage {
+  text-align: center;
+  padding-top: 2rem;
 }
-.subscriber {
-  margin-left: 10%;
+
+.LandingPage h1 {
+  font-weight: 300;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  color: #f09d51;
 }
-.publisher {
-  float: right;
-  margin-right: 10%;
+
+.LandingPage h2 {
+  font-weight: 300;
+  font-size: 2rem;
+  padding-bottom: 10rem;
+  color: #333;
 }
-.OTPublisherContainer {
-  width: 80vh !important;
-  height: 80vh !important;
+
+.LandingPage .form-container {
+  display: flex;
+  justify-content: center;
 }
-#error {
-  color: red;
+
+::placeholder {
+  color: white;
+}
+
+.LandingPage input {
+  height: 3rem;
+  width: 20rem;
+  border: none;
+  background-color: #333;
+  color: white;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.LandingPage button {
+  width: 10rem;
+  height: 4rem;
+  background-color: #eee;
+  font-size: 1rem;
+  border: 1px solid black;
+}
+
+.LandingPage button:hover {
+  transition: 0.5s;
+  width: 10.1rem;
+  height: 4.1rem;
+  background-color: #f09d51;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.Footer a{
+  text-decoration: none;
+}
+
+.Footer {
+  position: absolute;
+  font-size: 0.8rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.Footer a:hover {
+  transition: 0.5s;
+  color: #f09d51;
+  font-size: 0.9rem;
 }

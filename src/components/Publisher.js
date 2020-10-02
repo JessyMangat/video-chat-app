@@ -32,8 +32,7 @@ class Publisher extends React.Component {
 
   render() {
     return (
-      <div className="publisher">
-        Publisher
+      <div className="Publisher">
         {this.state.error ? <div id="error">{this.state.error}</div> : null}
         <OTPublisher
           properties={{
